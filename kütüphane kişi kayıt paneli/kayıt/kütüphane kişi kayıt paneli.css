@@ -19,15 +19,22 @@
     display: flex;
     align-items: stretch; /* Yüksekliği eşitlemek için */
     flex-wrap: nowrap; /* Kutuların alt alta düşmesini engellemek için */
-    width: 100%;
+    width: 90%;
     max-width: 800px; /* Daha geniş yaparak yan yana sığmasını sağla */
+    background-color: white;
 }
 
 .left-box{
-    padding: 100px;
+    padding: 50px;
     background-color: rgb(25, 21, 98);
-    flex-basis: 100%;
+    flex-basis: 50%;
     flex-grow: 1;
     color: #fff;
+}
+
+.right-box{
+    padding: 100px;
+    flex-basis: 50%;
+    flex-grow: 1;
 }
 /*-----------------------------------*/
