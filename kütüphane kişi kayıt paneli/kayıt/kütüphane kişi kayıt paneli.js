@@ -9,7 +9,6 @@ function kontrolEt()
     let soyadiniz = document.getElementById("soyadiniz");
     let adres = document.getElementById("adres");
     let ilçe = document.getElementById("ilçe");
-    let PostaKodu = document.getElementById("PostaKodu");
     let ülke = document.getElementById("ülke");            
     let email = document.getElementById("email");
     let EvNumarasi = document.getElementById("EvNumarasi");
@@ -22,7 +21,6 @@ function kontrolEt()
     soyadiniz.value=myObj.soyadiniz;
     adres.value=myObj.adres;
     ilçe.value=myObj.ilçe;
-    PostaKodu.value=myObj.PostaKodu;
     ülke.value=myObj.ülke;
     email.value=myObj.email;
     EvNumarasi.value=myObj.EvNumarasi;
@@ -38,7 +36,6 @@ function kaydet()
     let soyadiniz = document.getElementById("soyadiniz");
     let adres = document.getElementById("adres");
     let ilçe = document.getElementById("ilçe");
-    let PostaKodu = document.getElementById("PostaKodu");
     let ülke = document.getElementById("ülke");            
     let email = document.getElementById("email");
     let EvNumarasi = document.getElementById("EvNumarasi");
@@ -65,11 +62,6 @@ function kaydet()
     if(ilçe.value.length<=2)
     {
         sonuc.innerHTML="ilçe uzunlugu en az 2 karakter olmali--";
-        return ;
-    }
-    if(PostaKodu.value.length<=4)
-    {
-        sonuc.innerHTML="PostaKodu uzunlugu en az 5 karakter olmali--";
         return ;
     }
     if(ülke.value.length>=18)
@@ -110,7 +102,6 @@ function kaydet()
         soyadiniz:soyadiniz.value,
         adres:adres.value,
         ilçe:ilçe.value,
-        PostaKodu:PostaKodu.value,
         ülke:ülke.value,
         email:email.value,
         EvNumarasi:EvNumarasi.value,
